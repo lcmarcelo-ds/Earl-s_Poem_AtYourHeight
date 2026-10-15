@@ -36,6 +36,10 @@ No private messages, patient information, photos, or workplace identifiers are i
 
 Python syntax and Streamlit AppTest execution are checked when supported by the build environment. Browser visual and speech checks must be completed on the deployed app; synthesized audio depends on the viewing device.
 
-## Soundtrack
+## Audio-only soundtrack
 
-An optional YouTube player above the poem embeds the video selected by Lloyd: https://www.youtube.com/watch?v=R1_573KxH2w . Press play to start it. Playback requires internet and depends on YouTube availability and the uploader permitting embedding. An Open on YouTube link is included as a fallback. No audio is downloaded or bundled. Pause music manually before using the poem read-aloud; automatic ducking is not implemented. YouTube may show ads or require interaction. Mobile background playback is not guaranteed.
+The uploaded MP3 is bundled as soundtrack.mp3. Upload this file alongside app.py, index.html, requirements.txt, and .streamlit/config.toml. There is no YouTube player or external video embed.
+
+Tap Play music to begin. The default volume is 30%; use the volume slider to change it. Looping starts enabled and can be disabled. Music keeps playing between poem scenes. Read-aloud reduces the music volume to 20% of your chosen level, then restores it when reading ends, stops, or changes scene. Mobile browsers may require the phone volume buttons and may pause audio when the screen locks or another app opens. The app attempts audible autoplay on opening. If the browser blocks it, the Play music button provides a one-tap fallback. Audible autoplay is not guaranteed, especially on phones.
+
+The MP3 is embedded by Python into the poem component. Opening index.html directly will not load the soundtrack: run the Streamlit app. Reuse and publish the supplied audio only as permitted by its rights holder. No DRM or download restrictions are bypassed by this app.
