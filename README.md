@@ -35,3 +35,7 @@ No private messages, patient information, photos, or workplace identifiers are i
 ## Validation
 
 Python syntax and Streamlit AppTest execution are checked when supported by the build environment. Browser visual and speech checks must be completed on the deployed app; synthesized audio depends on the viewing device.
+
+## Soundtrack
+
+An optional YouTube player above the poem embeds the video selected by Lloyd: https://www.youtube.com/watch?v=R1_573KxH2w . Press play to start it. Playback requires internet and depends on YouTube availability and the uploader permitting embedding. An Open on YouTube link is included as a fallback. No audio is downloaded or bundled. Pause music manually before using the poem read-aloud; automatic ducking is not implemented. YouTube may show ads or require interaction. Mobile background playback is not guaranteed.
